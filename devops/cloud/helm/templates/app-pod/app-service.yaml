@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: {{ .Values.app.prefix }}-app
+  name: {{ .Values.app.prefix }}-app
+  namespace: {{ .Values.app.namespace }}
+spec:
+  type: NodePort
+  ports:
+  - name: {{ .Values.service.authproxy.name }}
+    port: {{ .Values.service.authproxy.port }}
+    targetPort: {{ .Values.service.authproxy.targetPort }}
+  - name: {{ .Values.service.camunda.name }}
+    port: {{ .Values.service.camunda.port }}
+    targetPort: {{ .Values.service.camunda.targetPort }}
+  - name: {{ .Values.service.security.name }}
+    port: {{ .Values.service.security.port }}
+    targetPort: {{ .Values.service.security.targetPort }}
+  - name: {{ .Values.service.admin.name }}
+    port: {{ .Values.service.admin.port }}
+    targetPort: {{ .Values.service.admin.targetPort }}
+  - name: {{ .Values.service.systementry.name }}
+    port: {{ .Values.service.systementry.port }}
+    targetPort: {{ .Values.service.systementry.targetPort }}
+
+  - name: {{ .Values.service.contractors.name }}
+    port: {{ .Values.service.contractors.port }}
+    targetPort: {{ .Values.service.contractors.targetPort }}
+
+  - name: {{ .Values.service.subcontrators.name }}
+    port: {{ .Values.service.subcontrators.port }}
+    targetPort: {{ .Values.service.subcontrators.targetPort }}
+
+  - name: {{ .Values.service.attendancerecord.name }}
+    port: {{ .Values.service.attendancerecord.port }}
+    targetPort: {{ .Values.service.attendancerecord.targetPort }}
+
+  - name: {{ .Values.service.accessprofile.name }}
+    port: {{ .Values.service.accessprofile.port }}
+    targetPort: {{ .Values.service.accessprofile.targetPort }}
+
+  - name: {{ .Values.service.safety.name }}
+    port: {{ .Values.service.safety.port }}
+    targetPort: {{ .Values.service.safety.targetPort }}
+
+  selector:
+    name: {{ .Values.app.prefix }}-app

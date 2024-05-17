@@ -1,0 +1,190 @@
+---
+openapi: 3.0.0
+info:
+   version: 1.3.0
+   title: cheiconstru open api specification
+   description: safety API
+   termsOfService: http://api_url/terms/
+   contact:
+      name: ContactName
+      email: hello@wolox.co
+      url: https://www.wolox.com.ar/
+   license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+   - url: http://localhost:8021
+     description: safety
+tags:
+- name: safety
+paths:
+   "/safety/{id}":
+      delete:
+         tags:
+         -  safety
+         description: GpDelete
+         parameters:
+         -  in: "path"
+            description: GpDelete
+            name: id
+            required: true
+            schema:
+               type: "string"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+      get:
+         tags:
+         -  safety
+         description: GpGetEntityById
+         parameters:
+         -  in: "path"
+            description: GpGetEntityById
+            name: id
+            required: true
+            schema:
+               type: "string"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/safety/get/search":
+      get:
+         tags:
+         -  safety
+         description: GpSearch
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/safety/get/update":
+      put:
+         tags:
+         -  safety
+         description: GpSearchForUpdate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/safety"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/safety":
+      put:
+         tags:
+         -  safety
+         description: GpUpdate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/safety"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+      get:
+         tags:
+         -  safety
+         description: GpGetAllValues
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+      post:
+         tags:
+         -  safety
+         description: GpCreate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/safety"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/safety/userid/created_by":
+      get:
+         tags:
+         -  safety
+         description: GpGetNounCreatedBy
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+components:
+   schemas:
+      safety:
+         type: object
+         properties:
+            employee:
+               type: "string"
+               description: Description
+            project:
+               type: "string"
+               description: Description
+            contractor:
+               type: "string"
+               description: Description
+            violation:
+               type: "string"
+               description: Description
+            hard_hat:
+               type: "string"
+               description: Description
+            safety_goggles:
+               type: "string"
+               description: Description
+            HV_clothes:
+               type: "string"
+               description: Description
+            safety_footwear:
+               type: "string"
+               description: Description
+            fall_protection:
+               type: "string"
+               description: Description

@@ -1,0 +1,7 @@
+{
+  "name": "cheiconstru",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
