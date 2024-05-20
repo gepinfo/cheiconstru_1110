@@ -26,7 +26,11 @@ let routes: any = [
 { path: '/managecontrol', component: Managecontrol },
 { path: '/usermanagement', component: User },
 { path: '/profile', component: ProfilesettingsComponent },
-{ path : '/contractor form sanjeev', component: lazy(()=>import('./app/contractor form sanjeev/contractor form sanjeev')) },
+{ path : '/contractor', component: lazy(()=>import('./app/contractor/contractor')) },
+{ path : '/nandhabalan onboard a contractor', component: lazy(()=>import('./app/nandhabalan onboard a contractor/nandhabalan onboard a contractor')) },
+{ path : '/contracter list page', component: lazy(()=>import('./app/contracter list page/contracter list page')) },
+{ path : '/attendance record', component: lazy(()=>import('./app/attendance record/attendance record')) },
+{ path : '/security page', component: lazy(()=>import('./app/security page/security page')) },
 { path: "", component: Template }
 
 ];

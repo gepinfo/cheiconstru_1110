@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.gjs-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.gjs-cell {
+    min-height: 75px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+#template-iquz {
+    height: 491px;
+    top: 0px;
+    left: 0px;
+}
+
+#template-iziz {
+    background-color: #f2f4f7;
+}
+
+#template-iymc {
+    height: 457px;
+    top: 10px;
+    left: 10px;
+}
+
+#template-irlw {
+    background-color: #ffffff;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#template-i3kx {
+    height: 62px;
+    top: 20px;
+    left: 20px;
+}
+
+#template-iygfz {
+    padding-top: 10px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 10px;
+    transform: translateX(23px)translateY(0px);
+}
+
+#myGrid {
+    width: auto;
+    height: 50%;
+    transform: translateX(-2px)translateY(16px);
+    font-family: 'DroidSerif'serif;
+}
+
+#template-ipj2m {
+    transform: translateX(0px)translateY(0px);
+    height: 335px;
+    top: 132px;
+    left: 38px;
+}
+
+#template-iirsy {
+    transform: translateX(-10px)translateY(10px);
+}
+
+#template-iqgx8 {
+    padding: 10px;
+    transform: translateX(0px)translateY(14px);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#template-io7fu {
+    transform: translateX(491px)translateY(17px);
+    width: 200px;
+    height: 40px;
+    background-image: unset;
+    background-repeat: unset;
+    background-position: unset;
+    background-attachment: unset;
+    background-size: unset;
+    background-color: #225f7c;
+}
+
+@media(max-width:768px) {
+    .gjs-row {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:575px) {
+    #template-irlw {
+        transform: translateX(0px)translateY(10px);
+    }
+}

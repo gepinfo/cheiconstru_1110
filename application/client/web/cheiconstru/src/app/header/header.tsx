@@ -204,6 +204,46 @@ import React, { useState,useEffect } from 'react';
 </div>
 </div>
 </div>
+</div>):<></>}
+{check?(<div id="icrvgp" className="cell gpd-clm"  >
+                                                        <div id="i6vd27" className="gdp-row gpd-grid"  >
+                                                            <div id="inlo1l" className="cell gpd-clm"  >
+                                                                <i id="iyxitk" className="fa fa-folder-open" aria-hidden="true"></i>
+                                                            </div>
+                                                            <div id="iytw4t" className="cell gpd-clm" >
+                                                                <a id="i9imej" className="gpd-text" href="#attendancerecord" data-toggle="collapse" data-parent="#MainMenu">attendancerecord <i className="fa fa-caret-down"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>):<></>}
+                                                    {check?( <div className="collapse" id="attendancerecord">
+                                                        <div id="icrvgp" className="cell gpd-clm">
+                                                            <div id="i6vd27" className="gdp-row gpd-grid">
+                                                                <div id="iytw4t" className="cell gpd-clm">
+<a id="i9imej" className="gpd-text" href='/attendance record'>Attendance record</a>
+                                        
+</div>
+</div>
+</div>
+</div>):<></>}
+{check?(<div id="icrvgp" className="cell gpd-clm"  >
+                                                        <div id="i6vd27" className="gdp-row gpd-grid"  >
+                                                            <div id="inlo1l" className="cell gpd-clm"  >
+                                                                <i id="iyxitk" className="fa fa-folder-open" aria-hidden="true"></i>
+                                                            </div>
+                                                            <div id="iytw4t" className="cell gpd-clm" >
+                                                                <a id="i9imej" className="gpd-text" href="#security" data-toggle="collapse" data-parent="#MainMenu">security <i className="fa fa-caret-down"></i></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>):<></>}
+                                                    {check?( <div className="collapse" id="security">
+                                                        <div id="icrvgp" className="cell gpd-clm">
+                                                            <div id="i6vd27" className="gdp-row gpd-grid">
+                                                                <div id="iytw4t" className="cell gpd-clm">
+<a id="i9imej" className="gpd-text" href='/security page'>Security Page</a>
+                                        
+</div>
+</div>
+</div>
 </div>):<></>}<div id="icrvgp" className="cell gpd-clm" >
                                                                 <div id="i6vd27" className="gdp-row gpd-grid" >
                                                                     <div id="inlo1l" className="cell gpd-clm" >

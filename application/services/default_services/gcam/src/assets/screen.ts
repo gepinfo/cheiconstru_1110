@@ -9,5 +9,9 @@
 {"resources":"create", "role":"Guest"}
     ,
 {"resources":"routenav", "role":"Guest"}
+    ,
+{"resources":"Attendance record", "role":"Guest"}
+    ,
+{"resources":"Security Page", "role":"Guest"}
     
 ]

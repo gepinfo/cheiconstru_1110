@@ -170,6 +170,7 @@ services:
       - securitymanager
       - systemcredentialmanager
       - systementry
+      - projects
       - contractors
       - subcontrators
       - attendancerecord
@@ -255,7 +256,28 @@ services:
     image: systementry-1110
     container_name: systementry-1110
     ports: 
-      - 8016:8016
+      - 8038:8038
+    env_file: .env
+    depends_on:
+      - mongo
+    networks:
+      - cheiconstru_1110_net
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: 0.0.0.0:24224
+        fluentd-async-connect: "true"
+        tag: fluent
+    mem_limit: 300m
+    mem_reservation: 150m
+    cpus: 0.2
+
+  projects: 
+    build: ../../../application/services/custom_services/projects
+    image: projects-1110
+    container_name: projects-1110
+    ports: 
+      - 8039:8039
     env_file: .env
     depends_on:
       - mongo
@@ -276,7 +298,7 @@ services:
     image: contractors-1110
     container_name: contractors-1110
     ports: 
-      - 8017:8017
+      - 8040:8040
     env_file: .env
     depends_on:
       - mongo
@@ -297,7 +319,7 @@ services:
     image: subcontrators-1110
     container_name: subcontrators-1110
     ports: 
-      - 8018:8018
+      - 8041:8041
     env_file: .env
     depends_on:
       - mongo
@@ -318,7 +340,7 @@ services:
     image: attendancerecord-1110
     container_name: attendancerecord-1110
     ports: 
-      - 8019:8019
+      - 8042:8042
     env_file: .env
     depends_on:
       - mongo
@@ -339,7 +361,7 @@ services:
     image: accessprofile-1110
     container_name: accessprofile-1110
     ports: 
-      - 8020:8020
+      - 8043:8043
     env_file: .env
     depends_on:
       - mongo
@@ -360,7 +382,7 @@ services:
     image: safety-1110
     container_name: safety-1110
     ports: 
-      - 8021:8021
+      - 8044:8044
     env_file: .env
     depends_on:
       - mongo

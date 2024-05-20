@@ -70,12 +70,13 @@ module.exports = {
             ],
             "environmentFiles": null,
             "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@127.0.0.1:27017/cheiconstru_1110?authSource=admin"},{"name":"MONGO_DOMAIN","value":"127.0.0.1"},{"name":"SECURITYURL","value":"http://127.0.0.1:8003"},{"name":"AUTHPROXYURL","value":"http://127.0.0.1:8001"},{"name":"ADMINURL","value":"http://127.0.0.1:8004"},{"name":"GCAMURL","value":"http://127.0.0.1:8007"},{"name":"APIGATEWAY","value":"http://127.0.0.1:8000"},{"name":"SYSTEMCREDENTIALMANAGERURL","value":"http://127.0.0.1:8005"}
-            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8016"}
-            ,{"name":"CONTRACTORSURL","value":"http://cheiconstru0.local:8017"}
-            ,{"name":"SUBCONTRATORSURL","value":"http://cheiconstru0.local:8018"}
-            ,{"name":"ATTENDANCERECORDURL","value":"http://cheiconstru0.local:8019"}
-            ,{"name":"ACCESSPROFILEURL","value":"http://cheiconstru0.local:8020"}
-            ,{"name":"SAFETYURL","value":"http://cheiconstru0.local:8021"}
+            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8038"}
+            ,{"name":"PROJECTSURL","value":"http://cheiconstru0.local:8039"}
+            ,{"name":"CONTRACTORSURL","value":"http://cheiconstru0.local:8040"}
+            ,{"name":"SUBCONTRATORSURL","value":"http://cheiconstru0.local:8041"}
+            ,{"name":"ATTENDANCERECORDURL","value":"http://cheiconstru0.local:8042"}
+            ,{"name":"ACCESSPROFILEURL","value":"http://cheiconstru0.local:8043"}
+            ,{"name":"SAFETYURL","value":"http://cheiconstru0.local:8044"}
             ],
             "secrets": null,
             "mountPoints": [
@@ -297,7 +298,7 @@ module.exports = {
             ],
             "environmentFiles": null,
             "environment": [{"name":"MONGO_DB_URL","value":"mongodb://admin:password@127.0.0.1:27017/cheiconstru_1110?authSource=admin"},{"name":"MONGO_DOMAIN","value":"127.0.0.1"},{"name":"SECURITYURL","value":"http://127.0.0.1:8003"},{"name":"AUTHPROXYURL","value":"http://127.0.0.1:8001"},{"name":"ADMINURL","value":"http://127.0.0.1:8004"},{"name":"GCAMURL","value":"http://127.0.0.1:8007"},{"name":"APIGATEWAY","value":"http://127.0.0.1:8000"}
-            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8016"}
+            ,{"name":"SYSTEMENTRYURL","value":"http://127.0.0.1:8038"}
             ],
             "mountPoints": [
                 {
@@ -378,9 +379,9 @@ module.exports = {
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": "8016",
+                    "containerPort": "8038",
                     "protocol": "tcp",
-                    "hostPort": "8016"
+                    "hostPort": "8038"
                 }
             ],
             "environmentFiles": null,

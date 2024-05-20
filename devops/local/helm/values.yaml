@@ -54,38 +54,44 @@ service:
   systementry: 
     name: systementry
     type: NodePort
-    port: 8016
-    targetPort: 8016
+    port: 8038
+    targetPort: 8038
+
+  projects: 
+    name: projects
+    type: NodePort
+    port: 8039
+    targetPort: 8039
 
   contractors: 
     name: contractors
     type: NodePort
-    port: 8017
-    targetPort: 8017
+    port: 8040
+    targetPort: 8040
 
   subcontrators: 
     name: subcontrators
     type: NodePort
-    port: 8018
-    targetPort: 8018
+    port: 8041
+    targetPort: 8041
 
   attendancerecord: 
     name: attendancerecord
     type: NodePort
-    port: 8019
-    targetPort: 8019
+    port: 8042
+    targetPort: 8042
 
   accessprofile: 
     name: accessprofile
     type: NodePort
-    port: 8020
-    targetPort: 8020
+    port: 8043
+    targetPort: 8043
 
   safety: 
     name: safety
     type: NodePort
-    port: 8021
-    targetPort: 8021
+    port: 8044
+    targetPort: 8044
 
 
 deployment:
@@ -115,6 +121,10 @@ deployment:
   systementry: 
     name: systementry
     image: geppettotest/cheiconstru-systementry:1.0
+
+  projects: 
+    name: projects
+    image: geppettotest/cheiconstru-projects:1.0
 
   contractors: 
     name: contractors

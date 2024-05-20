@@ -24,6 +24,10 @@ spec:
     port: {{ .Values.service.systementry.port }}
     targetPort: {{ .Values.service.systementry.targetPort }}
 
+  - name: {{ .Values.service.projects.name }}
+    port: {{ .Values.service.projects.port }}
+    targetPort: {{ .Values.service.projects.targetPort }}
+
   - name: {{ .Values.service.contractors.name }}
     port: {{ .Values.service.contractors.port }}
     targetPort: {{ .Values.service.contractors.targetPort }}

@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.gjs-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.gjs-cell {
+    min-height: 75px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+#template-i5kf {
+    height: 731px;
+    top: -18px;
+    left: -14px;
+    transform: translateX(-14px)translateY(-19px);
+}
+
+#template-ikbf {
+    transform: translateX(10px)translateY(15px);
+    flex-basis: 98%;
+    top: 6px;
+    left: 6%;
+    border: 0pxsolidblack;
+    box-shadow: unset;
+    background-color: #f2f4f7;
+}
+
+#template-i8zr {
+    background-color: #ffffff;
+    transform: translateX(0px)translateY(0px);
+}
+
+#i083 {
+    background-color: #150505;
+}
+
+#template-izmy {
+    height: 600px;
+    top: 103px;
+    left: 14px;
+    transform: translateX(8px)translateY(2px);
+}
+
+#template-icsqw {
+    flex-basis: 99%;
+    top: 111px;
+    left: 37%;
+    transform: translateX(0px)translateY(0px);
+    margin: 0px0px0px15px;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-family: 'DroidSans'sans-serif;
+}
+
+#template-iz2bl {
+    padding: 10px10px10px20px;
+    font-family: 'DroidSans'sans-serif;
+    color: #1f1f1f;
+    line-height: 26px;
+    font-size: 20px;
+}
+
+#template-ih54q {
+    width: 348px;
+    height: 70px;
+}
+
+#template-igrh3 {
+    width: 348px;
+    height: 70px;
+}
+
+#template-iz8lh {
+    width: 348px;
+    height: 70px;
+}
+
+#template-ito77 {
+    width: 348px;
+    height: 70px;
+}
+
+#template-i717o {
+    width: 348px;
+    height: 70px;
+}
+
+#template-ix2j8 {
+    width: 248px;
+    height: 70px;
+    transform: translateX(0px)translateY(-67px);
+}
+
+#template-i4iyf {
+    width: 348px;
+    height: 70px;
+}
+
+#template-i307o {
+    width: 348px;
+    height: 70px;
+}
+
+#template-iimjw {
+    width: 348px;
+    height: 70px;
+}
+
+#template-iv6na {
+    width: 250px;
+    height: 70px;
+    transform: translateX(40px)translateY(-84px);
+}
+
+#template-i79he {
+    transform: translateX(248px)translateY(1px);
+    width: 109px;
+    height: 67px;
+    background-color: #bfbfbf;
+}
+
+#template-ile64 {
+    transform: translateX(-7px)translateY(-63px);
+}
+
+#template-iee3g {
+    transform: translateX(0px)translateY(0px);
+}
+
+#template-iqept {
+    transform: translateX(-756px)translateY(96px);
+    width: 100px;
+    height: 67px;
+    background-color: #bfbfbf;
+}
+
+#template-i89qh {
+    transform: translateX(-32px)translateY(84px);
+}
+
+#template-iqd5a {
+    transform: translateX(25px)translateY(-85px);
+}
+
+#template-i13gf {
+    width: 100px;
+    height: 50px;
+    background-color: #d9d9d9;
+    transform: translateX(107px)translateY(0px);
+}
+
+#template-iad3j {
+    width: 100px;
+    height: 50px;
+    background-color: #225f7c;
+    transform: translateX(60px)translateY(0px);
+}
+
+@media(max-width:768px) {
+    .gjs-row {
+        flex-wrap: wrap;
+    }
+}
